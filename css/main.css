@@ -10,3 +10,17 @@ body {
 .hidden {
   display: none;
   visibility: hidden; }
+
+body {
+  text-align: center;
+  background: black; }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
+
+img {
+  display: block;
+  max-width: 100%; }

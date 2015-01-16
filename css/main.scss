@@ -2,3 +2,23 @@
 
 // 
 // Keep it clean in here. No more than three levels of indentation.
+
+body {
+  text-align: center;
+  background: black;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+}
