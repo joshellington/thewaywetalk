@@ -1,22 +1,88 @@
 @import "lib/utilities.scss";
 
-// 
-// Keep it clean in here. No more than three levels of indentation.
+@font-face {
+  font-family: 'Trade Gothic';
+  src: 
+    url('trade-gothic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Silverscreen';
+  src: 
+    url('silverscreen.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Silverscreen Bold';
+  src: 
+    url('silverscreen-bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 body {
+  background: #eee;
+  font-family: 'Trade Gothic', sans-serif;
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background: white;
   text-align: center;
-  background: black;
+  max-width: 100%;
+
+  img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1;
+  padding: 0 0 60px 0;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.wrapper {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+
+  &.wide {
+    max-width: 800px;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.poster {
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.copy {
+  padding: 60px 0;
 }
 
 img {
-  display: block;
   max-width: 100%;
 }
 
