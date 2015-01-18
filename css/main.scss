@@ -81,7 +81,7 @@ img {
 
 @media (max-width: 600px) {
   .wrapper {
-    margin: 30px 0;
+    margin: 0 0 30px 0;
   }
 
   .screencap {
@@ -95,6 +95,7 @@ img {
       top: 0;
       max-height: auto;
       transform: translateY(5%);
+      padding: 15px;
     }
   }
 
