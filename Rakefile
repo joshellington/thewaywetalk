@@ -1,5 +1,5 @@
 ssh_user = "ellingtj@joshellington.com" # for rsync deployment
-remote_root = "/home/ellingtj/thewaywetalk.org/" # for rsync deployment
+remote_root = "/home/ellingtj/thewaywetalk.org/splash/" # for rsync deployment
 
 task :deploy do
   system("rsync --exclude-from=rsync.exclude -rcv . #{ssh_user}:#{remote_root}")
