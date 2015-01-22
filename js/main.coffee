@@ -1,20 +1,29 @@
+configs = [
+  {
+    img: 'img/photo1.jpg'
+    class: ''
+  },
+  {
+    img: 'img/photo2.jpg'
+    class: 'two'
+  },
+  {
+    img: 'img/photo3.jpg'
+    class: 'three'
+  }
+]
+
 
 $ ->
-  if window.innerHeight > 600
-    setHeight('header')
-    setMargin('.wrapper')
-
-    $(window).on 'resize', =>
-      setHeight('header')
+  active = configs[Math.floor(Math.random()*configs.length)]
+  setup(active)
 
   $(window).load ->
     loaded()
 
-setHeight = (elements) ->
-  $(elements).height(window.innerHeight)
-
-setMargin = (elements) ->
-  $(elements).css 'margin-top', window.innerHeight
-
 loaded = ->
   $('body').addClass('loaded')
+
+setup = (active) ->
+  $('.text').addClass(active.class)
+  $('.background').css('background-image', 'url(../'+active.img+')')
