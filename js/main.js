@@ -29,7 +29,7 @@
 
   setup = function(active) {
     $('.text').addClass(active["class"]);
-    return $('.background').css('background-image', 'url(../' + active.img + ')');
+    return $('.background').css('background-image', 'url(' + active.img + ')');
   };
 
 }).call(this);

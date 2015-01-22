@@ -26,4 +26,4 @@ loaded = ->
 
 setup = (active) ->
   $('.text').addClass(active.class)
-  $('.background').css('background-image', 'url(../'+active.img+')')
+  $('.background').css('background-image', 'url('+active.img+')')
