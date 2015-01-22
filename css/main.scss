@@ -15,11 +15,6 @@ body {
 
 body.loaded {
   opacity: 1;
-
-  .text, .background {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .background {
@@ -35,6 +30,10 @@ body.loaded {
   background-position: center center;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+
+  &.loaded {
+    opacity: 1;
+  }
 }
 
 .text {
@@ -60,6 +59,11 @@ body.loaded {
 
   a:hover {
     opacity: 0.9;
+  }
+
+  &.loaded {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

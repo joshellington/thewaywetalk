@@ -22,7 +22,10 @@ $ ->
     loaded()
 
 loaded = ->
-  $('body').addClass('loaded')
+  $('body, .background').addClass('loaded')
+  setTimeout ->
+    $('.text').addClass('loaded')
+  , 750
 
 setup = (active) ->
   $('.text').addClass(active.class)

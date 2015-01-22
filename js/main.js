@@ -24,7 +24,10 @@
   });
 
   loaded = function() {
-    return $('body').addClass('loaded');
+    $('body, .background').addClass('loaded');
+    return setTimeout(function() {
+      return $('.text').addClass('loaded');
+    }, 750);
   };
 
   setup = function(active) {
