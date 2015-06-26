@@ -7,10 +7,11 @@
 // }
 
 body {
-  background: #fff;
-  font-family: 'Trade Gothic', sans-serif;
-  color: #111;
+  background: #111;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  color: white;
   opacity: 0;
+  font-weight: 100;
 }
 
 body.loaded {
@@ -18,7 +19,7 @@ body.loaded {
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -32,38 +33,81 @@ body.loaded {
   transition: all 0.5s ease-in-out;
 
   &.loaded {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 
-.text {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  z-index: 5;
-  transform: translateY(-5%);
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+.main {
+  max-width: 600px;
+  margin: 100px auto 50px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
 
-  &.two {
-    right: auto;
-    left: 30px;
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 10px 0;
   }
 
-  &.three {
-    top: auto;
-    right: auto;
-    bottom: 30px;
-    left: 30px;
+  a.facebook, a.kickstarter {
+    background: white;
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+
+    &:hover {
+      background: #ddd;
+    }
+
+    img {
+      display: block;
+    }
   }
 
-  a:hover {
-    opacity: 0.9;
+  form.donate {
+    display: inline-block;
   }
+}
 
-  &.loaded {
-    transform: translateY(0);
-    opacity: 1;
+.presents {
+  display: inline-block;
+  margin: 0 0 25px 0;
+}
+
+.title {
+  display: inline-block;
+  margin: 0 0 25px 0;
+}
+
+hr {
+  width: 150px;
+  margin: 15px auto;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+.press {
+  .opb {
+    background: white;
+    padding: 8px 8px 5px;
+    border-radius: 8px;
+    position: relative;
+    top: 4px;
+    left: 10px;
+
+    img {
+    }
+  }
+}
+
+.contact {
+  font-size: 13px;
+
+  a {
+    font-weight: bold;
   }
 }
 
