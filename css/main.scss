@@ -18,6 +18,12 @@ body.loaded {
   opacity: 1;
 }
 
+body.playing {
+  .background {
+    opacity: 0;
+  }
+}
+
 .background {
   position: fixed;
   top: 0;
@@ -38,9 +44,9 @@ body.loaded {
 }
 
 .main {
-  max-width: 600px;
-  margin: 100px auto 50px;
-  padding: 30px;
+  max-width: 913px;
+  margin: 50px auto;
+  padding: 0 30px;
   position: relative;
   z-index: 2;
   text-align: center;
@@ -87,6 +93,14 @@ hr {
   margin: 15px auto;
   border: 0;
   border-top: 1px solid white;
+}
+
+.trailer {
+  margin: 0 0 30px;
+
+  iframe {
+    max-width: 100%;
+  }
 }
 
 .press {
