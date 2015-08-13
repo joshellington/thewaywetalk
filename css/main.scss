@@ -11,7 +11,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   color: white;
   opacity: 0;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 body.loaded {
@@ -22,6 +22,13 @@ body.playing {
   .background {
     opacity: 0;
   }
+}
+
+p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 15px auto;
+  line-height: 1.4;
 }
 
 .background {
@@ -43,6 +50,10 @@ body.playing {
   }
 }
 
+.intro-text {
+  margin: 0 0 45px 0;
+}
+
 .main {
   max-width: 913px;
   margin: 50px auto;
@@ -58,14 +69,11 @@ body.playing {
     margin: 0 0 10px 0;
   }
 
-  a.facebook, a.kickstarter {
-    background: white;
-    padding: 15px;
+  a.facebook, a.kickstarter, a.twitter {
     margin: 0 5px;
-    border-radius: 8px;
 
     &:hover {
-      background: #ddd;
+      opacity: 0.8;
     }
 
     img {
@@ -75,6 +83,7 @@ body.playing {
 
   form.donate {
     display: inline-block;
+    margin: 25px 0 0;
   }
 }
 
@@ -90,7 +99,7 @@ body.playing {
 
 hr {
   width: 150px;
-  margin: 15px auto;
+  margin: 25px auto;
   border: 0;
   border-top: 1px solid white;
 }
@@ -100,6 +109,15 @@ hr {
 
   iframe {
     max-width: 100%;
+  }
+}
+
+.trailer-text {
+  blockquote {
+    p {
+      font-size: 14px;
+      font-style: italic;
+    }
   }
 }
 
@@ -118,7 +136,6 @@ hr {
 }
 
 .contact {
-  font-size: 13px;
 
   a {
     font-weight: bold;
